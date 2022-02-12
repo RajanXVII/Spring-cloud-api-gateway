@@ -5,7 +5,7 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: after_route
+      - id: welcomeGateway
         uri: http://localhost:8081
         predicates:
         - Path=/welcome/client/**
